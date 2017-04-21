@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/img"
+                android:background="@color/imgBg" />
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Title.Inverse"
+                android:id="@+id/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/img"
+                android:padding="@dimen/small"
+                tools:text="Titulo"
+                />
+
+            <ImageView
+                android:id="@+id/icon_estreno"
+                android:layout_width="@dimen/icon"
+                android:layout_height="@dimen/icon"
+                android:layout_below="@id/img"
+                android:layout_margin="@dimen/small"
+                android:src="@drawable/ic_today"
+                />
+
+            <TextView
+                android:id="@+id/estreno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/icon_estreno"
+                android:layout_alignBottom="@id/icon_estreno"
+                tools:text="21 de Abril"
+                />
+
+            <ImageView
+                android:id="@+id/icon_duracion"
+                android:layout_width="@dimen/icon"
+                android:layout_height="@dimen/icon"
+                android:layout_below="@id/icon_estreno"
+                android:layout_marginLeft="@dimen/small"
+                android:layout_marginRight="@dimen/small"
+                android:layout_marginBottom="@dimen/small"
+                android:src="@drawable/ic_time"
+                />
+
+            <TextView
+                android:id="@+id/duracion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/icon_duracion"
+                android:layout_alignBottom="@id/icon_duracion"
+                tools:text="120 min"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>
