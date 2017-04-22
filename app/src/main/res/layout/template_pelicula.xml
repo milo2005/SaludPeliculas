@@ -17,7 +17,9 @@
                 android:id="@+id/img"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/img"
-                android:background="@color/imgBg" />
+                android:background="@color/imgBg"
+                android:scaleType="centerCrop"
+                />
 
             <TextView
                 style="@style/TextAppearance.AppCompat.Title.Inverse"

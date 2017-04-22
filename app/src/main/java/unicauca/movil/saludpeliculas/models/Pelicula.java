@@ -36,4 +36,12 @@ public class Pelicula {
     public void setFechaEstreno(String fechaEstreno) {
         this.fechaEstreno = fechaEstreno;
     }
+
+    public int getDuracion() {
+        return duracion;
+    }
+
+    public void setDuracion(int duracion) {
+        this.duracion = duracion;
+    }
 }
